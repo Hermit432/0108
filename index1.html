@@ -1,0 +1,108 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery1.42.min.js" type="text/javascript"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<title>建党99周年</title>
+</head>
+
+<body>
+<div class="wapper_box">
+<div class="header_box"></div>
+<div class="header_box1">
+    <div class="header_box2">
+        
+         <ul class="nav_box">
+             <li class="nav_1"><a class="nav_but" href="about.html">网站首页</a></li>
+             <li class="nav_1"><a class="nav_but" href="index1.html">建党99周年</a>
+
+               <div class="nav_slide">
+                 <div class="nav_slide1">
+                     <a href="index1.html">五四运动<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="index2.html">中共一大<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="index3.html">心得体会<span><img src="images/siade_bg1.png"/></span></a>
+                 </div>
+                </div> 
+             </li>
+          
+            
+             <li class="nav_1">
+              <a class="nav_but" href="message.html">关于我们</a>
+            </li>
+         </ul>
+    </div>
+        <script>	 
+             $(".nav_1").mouseenter(function(){
+				 $(this).find(".nav_slide").slideDown()
+			  });
+			  
+			  $(".nav_1").mouseleave(function(){ 
+				 $(".nav_slide").slideUp()
+			 });
+			 //$(".producys_box").mouseout(function(){
+				// $(this).find(".producys_box1").slideUp(); 
+			 //});
+          </script>
+</div>
+<!--banner部分开始-->
+  <div class="banner_box1">
+        <ul class="banner_pic1">
+            <li><img src="images/44.jpg" /></li>
+            <li><img src="images/1.jpg" /></li>
+            <li><img src="images/11.jpg" /></li>
+    
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+        <div class="num"><ul></ul></div>
+  </div>
+	<script>
+    /*鼠标移过，左右按钮显示*/
+    $(".banner_box1").hover(function(){
+        $(this).find(".prev,.next").fadeTo("show",0.1);
+    },function(){
+        $(this).find(".prev,.next").hide();
+    })
+    /*鼠标移过某个按钮 高亮显示*/
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",0.7);
+    },function(){
+        $(this).fadeTo("show",0.1);
+    })
+    $(".banner_box1").slide({ titCell:".num ul" , mainCell:".banner_pic1" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    </script>
+    <!-- 代码 结束 -->
+  <!--banner部分结束-->
+
+<!--内容开始-->
+<div class="content_box1">
+  <div class="content_box2"> 
+    <div class="menu_box">
+       <p class="menu_box_title">建党99周年<span>About tea</span></p>
+       <ul class="menu_box1">
+          <li><a href="index1.html">五四运动</a></li>
+          <li><a href="index2.html">中共一大</a></li>
+          <li><a href="index3.html">心得体会</a></li>
+       </ul>
+    </div>
+    <div class="content_boxL">
+       <div class="content_boxL_nav">
+         <p class="content_boxL_nav_title">五四运动</p>
+         <div class="content_boxL_nav_R"><span>首页 ></span> <span>建党99周年 ></span><span> 五四运动</span></div>                          
+       </div>
+       <div class="content_boxL_text">
+         <img class="content_boxL_pic" src="images/121.jpeg"/>
+        <p> 五四运动
+（1919年5月4日）
+1919年1月“巴黎和会”决定将战败的德国在山东的特权转交给日本，消息传到国内，群情激愤。5月4日，3000多名北京爱国学生在天安门举行示威游行，掀起了全国规模的反帝爱国运动。这就是著名的五四爱国运动。五四运动标志着中国新民主主义革命的伟大开端，促进了马克思主义在中国的传播及其与工人运动相结合。</p>
+       </div>
+    </div>
+   <div class="clear"></div>
+   
+</div>
+</body>
+
+</html>
